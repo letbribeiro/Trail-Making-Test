@@ -1,125 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fillViewport="true"
     tools:context=".controller.TMTAInformationActivity">
 
-    <Button
-        android:id="@+id/buttonBackInformation"
-        android:layout_width="251sp"
-        android:layout_height="67sp"
-        android:layout_marginStart="36sp"
-        android:layout_marginBottom="124sp"
-        android:backgroundTint="#CE4336"
-        android:text="Voltar"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        tools:ignore="HardcodedText" />
-
-    <Button
-        android:id="@+id/buttonSampleA"
-        android:layout_width="251sp"
-        android:layout_height="67sp"
-        android:layout_marginEnd="36sp"
-        android:layout_marginBottom="124sp"
-        android:text="@string/start_sample"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/buttonBackInformation" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0sp"
-        android:layout_height="91sp"
-        android:layout_marginTop="76sp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/about_tmt_a"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="70sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewIntro"
-        android:layout_width="0sp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="68sp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/tmt_a_intro"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        android:paddingBottom="48dp"
+        tools:ignore="HardcodedText">
 
-    <TextView
-        android:id="@+id/textViewObjective"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16sp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/tmt_a_objetivo"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewIntro"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        <Button
+            android:id="@+id/buttonBackInformation"
+            android:layout_width="0dp"
+            android:layout_height="67sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#CE4336"
+            android:text="Voltar"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewExample"
+            app:layout_constraintStart_toStartOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSampleA"
+            app:layout_constraintHorizontal_weight="1"
+            tools:ignore="HardcodedText" />
 
-    <TextView
-        android:id="@+id/textViewHowTo"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16sp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/tmt_a_como_fazer"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewObjective"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        <Button
+            android:id="@+id/buttonSampleA"
+            android:layout_width="0dp"
+            android:layout_height="67sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/start_sample"
+            android:textSize="22sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewExample"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toEndOf="@+id/buttonBackInformation"
+            app:layout_constraintHorizontal_weight="1" />
 
-    <TextView
-        android:id="@+id/textViewStepByStep"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16sp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/tmt_a_passo_a_passo"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHowTo"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0sp"
+            android:layout_height="91sp"
+            android:layout_marginTop="76sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/about_tmt_a"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="70sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewExample"
-        android:layout_width="0sp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16sp"
-        android:fontFamily="sans-serif-light"
-        android:text="@string/tmt_a_exemplo"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewStepByStep"
-        app:layout_constraintStart_toEndOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+        <TextView
+            android:id="@+id/textViewIntro"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tmt_a_intro"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.1" />
+        <TextView
+            android:id="@+id/textViewObjective"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tmt_a_objetivo"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIntro"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.9" />
+        <TextView
+            android:id="@+id/textViewHowTo"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tmt_a_como_fazer"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewObjective"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textViewStepByStep"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tmt_a_passo_a_passo"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewHowTo"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+        <TextView
+            android:id="@+id/textViewExample"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/tmt_a_exemplo"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewStepByStep"
+            app:layout_constraintStart_toEndOf="@+id/guideline3"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
